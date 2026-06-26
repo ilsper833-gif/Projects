@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="to-do.css">
+</head>
+<body>
+    <!--This is adds the to-do's-->
+<div>
+<!--Progress bar-->
+<div class="stats-container">
+    <div class="details">
+        <h1>To-Do App</h1>
+        <p>Keep it up!</p>
+        <div id="progressBar">
+            <div id="progress"></div>
+        </div>
+    </div>
+    <div class="stats">
+    <p id="numbers">0 / 0</p>
+    <div class="progress-bar"><span class="fill to-do"></span></div>
+</div>
+</div>
+    <form action="#">
+        <input type="text" id="todoInput" placeholder="Add a new task" autocomplete="off">
+        <button type="submit"  id="addTask"><i class="fa-solid fa-plus"></i></button>
+        </form>
+</div>
+
+<ul id="task-list"></ul>
+    <!--This display the to do list on the website-->
+    <img src="svg/image.png" id="empty">
+<script src="script.js"></script>
+</div>
+</body>
+</html>
