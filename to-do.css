@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #9FA1FF;
+
 }
 
 .stats-container{
@@ -19,6 +19,8 @@ body{
     border-radius: 10px;
     border: 2px solid #D9F9DF;
     margin-bottom: 15px;
+    background-color: #9FA1FF;
+    box-shadow:  0px 1px 7px rgba(39, 37, 37, 0.674);
 }
 
 .details p{
@@ -29,13 +31,13 @@ body{
 #progress-bar{
     width: 100%;
     height: 10px;
-    background-color: #eee;
+    background-color: #767F9E;
     border-radius: 5px;
     margin-top: 20px;
 }
 
 #progress{
-    background-color: black;
+    background-color: #AEE2FF;
     border-radius: 5px;
     width: 50%;
     transition: all 0.3s ease;
@@ -72,6 +74,15 @@ input[type]{
     font-size: 20px;
 }
 
+.addContainer{
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #9FA1FF;
+    box-shadow:  0px 1px 7px rgba(39, 37, 37, 0.674);
+}
+
 #addTask{
     height: 35px;
     width: 40px;
@@ -91,11 +102,13 @@ input[type]{
 .todoItem{
     display: flex;
     background-color: #D9F9DF;
-    padding: 10px;
+    padding: 14px;
+    width: auto;
     border-radius: 10px;
     justify-content: space-between;
     width: 500px;
     align-items: center;
+    box-shadow: 0px 2px 7px#262e4b89;
 }
 
 #task-list{
@@ -103,16 +116,17 @@ input[type]{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .task{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 20px;
 }
 
-.completed p{
+.task.completed p{
     text-decoration: line-through;
     color: #9FA1FF;
 }
@@ -133,6 +147,12 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.task input{
+    padding: 20px;
+    border: none;
+
 }
 
 #empty{
